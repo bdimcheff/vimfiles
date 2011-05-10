@@ -265,7 +265,7 @@ if has("gui_running")
         colorscheme ir_dark
         set guifont=Inconsolata\ Medium\ 12
     else
-        colorscheme railscasts
+        colorscheme mac_classic 
         set guitablabel=%M%t
         set lines=40
         set columns=115
