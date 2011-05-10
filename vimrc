@@ -82,6 +82,8 @@ function! StatuslineTrailingSpaceWarning()
     return b:statusline_trailing_space_warning
 endfunction
 
+"automatically strip whitespace upon save
+autocmd BufWritePre * FixWhitespace
 
 "return the syntax highlight group under the cursor ''
 function! StatuslineCurrentHighlight()
