@@ -282,6 +282,8 @@ if has("gui_running")
           set transparency=5
         catch
         endtry
+        set fuoptions=maxvert,maxhorz
+        "au GUIEnter * set fullscreen
     endif
     if has("gui_win32") || has("gui_win32s")
         set guifont=Consolas:h12
