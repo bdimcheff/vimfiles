@@ -237,7 +237,8 @@ if has("gui_running")
     endif
 
     if has("gui_mac") || has("gui_macvim")
-        set guifont=Menlo:h14
+        set guifont=Fixed\ Medium:h13
+        set noantialias
         " key binding for Command-T to behave properly
         " uncomment to replace the Mac Command-T key to Command-T plugin
         macmenu &File.New\ Tab key=<nop>
