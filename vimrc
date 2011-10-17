@@ -1,4 +1,8 @@
+"avoiding annoying CSApprox warning message
+let g:CSApprox_verbose_level = 0
+
 "necessary on some Linux distros for pathogen to properly load bundles
+filetype on
 filetype off
 
 "load pathogen managed plugins
@@ -53,7 +57,7 @@ set fo=l
 set statusline=%f       "tail of the filename
 
 "Git
-set statusline+=[%{GitBranch()}]
+set statusline+=%{fugitive#statusline()}
 
 "RVM
 set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''}
@@ -306,6 +310,9 @@ map <A-o> :copen<CR>
 map <A-q> :cclose<CR>
 map <A-j> :cnext<CR>
 map <A-k> :cprevious<CR>
+
+"key mapping for Gundo
+nnoremap <F4> :GundoToggle<CR>
 
 "snipmate setup
 try
