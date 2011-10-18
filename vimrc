@@ -245,8 +245,8 @@ if has("gui_running")
         set noantialias
         " key binding for Command-T to behave properly
         " uncomment to replace the Mac Command-T key to Command-T plugin
-        macmenu &File.New\ Tab key=<nop>
         map <D-t> :CommandT<CR>
+        map <D-T> :CommandTBuffer<CR>
         " make Mac's Option key behave as the Meta key
         set invmmta
         try
@@ -286,7 +286,7 @@ nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
 
 "map to bufexplorer
-nnoremap <leader>b :BufExplorer<cr>
+nnoremap <leader>be :BufExplorer<cr>
 
 "map to CommandT TextMate style finder
 nnoremap <leader>t :CommandT<CR>
