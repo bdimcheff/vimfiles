@@ -211,6 +211,9 @@ set sidescroll=1
 filetype plugin on
 filetype indent on
 
+"arduino ftype
+autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
+
 "turn on syntax highlighting
 syntax on
 
