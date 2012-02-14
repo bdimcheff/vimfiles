@@ -158,3 +158,6 @@
 [submodule "bundle/vim-trailing-whitespace"]
 	path = bundle/vim-trailing-whitespace
 	url = git://github.com/bronson/vim-trailing-whitespace.git
+[submodule "bundle/arduino"]
+	path = bundle/arduino
+	url = git://github.com/vim-scripts/Arduino-syntax-file.git
