@@ -246,8 +246,8 @@ if has("gui_running")
     endif
 
     if has("gui_mac") || has("gui_macvim")
-        set guifont=Fixed\ Medium:h13
-        set noantialias
+        set guifont=Inconsolata\ Medium:h14
+        " set noantialias
         " key binding for Command-T to behave properly
         " uncomment to replace the Mac Command-T key to Command-T plugin
         map <D-t> :CommandT<CR>
